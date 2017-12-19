@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, minimal-ui">
+	<title>运维平台-注册</title>
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/layout.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+</head>
+ 
+<body>
+	<section class="index_page" id="indexP">
+		<form class="pub_center"> 
+			<dl class="bind_dl1">
+				<span class="s1"></span>
+				<input type="text" id="idCard" name="carid" class="carid" maxlength="18"  placeholder="请输入姓名" />
+				<b>*</b>
+			</dl>
+			<dl class="bind_dl1">
+				<span class="s2"></span>
+				<input type="number" id="phoneNum" name="tel" class="carid" pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$" oninput="if(value.length>11)value=value.slice(0,11)"  placeholder="请输入手机号码"/>
+				<b>*</b>
+			</dl>
+			<dl class="bind_dl2">
+				<input type="number" id="yzcode" name="yzcode"  placeholder="请输入验证码" oninput="if(value.length>6)value=value.slice(0,6)" class="fl yzcode"/>
+				<span class="fr get_yzm" onclick="SendVerifyCode()">获取验证码</span>
+				<span class="null"></span>
+			</dl>
+			<div class="yz_btn yz_index_btn"><input id="register" type="button" value="注 册" onclick="Register()"></div>
+			 
+		</form>
+	</section>		
+</body>
+</html> 
+ 
+ 

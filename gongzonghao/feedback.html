@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, minimal-ui">
+	<title>智能终端-意见反馈信息页</title>
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/layout.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+</head>
+ 
+<body>
+	<section class="feedback_page">
+		<form action="" class="myform">
+			<div class="content-block bind_dl1">
+				<span class="s1">地区</span>
+				<input id="demo2" type="text" class="carid address" readonly="" placeholder="请输入所在地区" />
+				<input id="value2" name="homeland" type="hidden" />
+			</div>	
+			<dl class="bind_dl1">
+				<span class="s1">问题类型</span>
+				<label class="radio_txt sexpan radio_active"><input name="sex" type="radio" class="inp_rad" value="1" checked="checked"> <b class="b1">问题</b> </label> 
+
+				<label class="radio_txt sexpan"><input name="sex" type="radio" class="inp_rad" value="2" ><b class="b1">建议</b></label>
+				<dl class="null"></dl>
+			</dl> 	
+			<dl class="bind_dl1">
+				<span class="s1">问题或建议</span>
+				<textarea class="texta" rows="3" cols="20"></textarea>
+				<span class="s_text">请简要描述你的问题和意见</span>
+			</dl>	
+			<div class="bind_dl1 feed_img">
+				<p>请上传图片<b>（最多4张）</b></p>
+				<img src="images/car_img1.png" />
+				<img src="images/car_img1.png" />
+				<img src="images/car_img1.png" />
+				<span class="upload"></span>
+				<div class="null"></div>
+			</div>			
+		</form>
+		 
+	</section> 
+</body>
+</html> 
+ 
+<script>
+    
+	$(function(){
+		$('.s_text').click(function(){
+			$(this).hide();
+			$('.texta').focus();
+		})
+	})
+</script> 
+ 
