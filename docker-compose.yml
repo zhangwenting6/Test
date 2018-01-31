@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  netcoreweb:
+    image: netcoreweb
+    build:
+      context: ./NetCoreWeb
+      dockerfile: Dockerfile
